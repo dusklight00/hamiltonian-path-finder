@@ -13,3 +13,6 @@ python wsgi.py
 That's it! You will be able to access the interface at **localhost:5000**.
 
 **[Live Demo](hamiltonian-path-finder.herokuapp.com/)**
+
+## Preview
+![Screen Record](https://github.com/dusklight00/hamiltonian-path-finder/blob/master/sample.gif?raw=true)
