@@ -2,6 +2,19 @@ class HamiltonianPath:
     def __init__(self, graph):
         self.graph = graph
 
+    def find_all_hamlin_paths(self):
+        possible_paths = []
+        for i in range(len(self.graph)):
+            possible_path = self.hamlin_path([i])
+            possible_paths += possible_path
+            if len(possible_path) == 0:
+                continue
+            if len(possible_path[0]) == 1:
+                continue
+            break
+
+        return possible_paths
+
     def hamlin_path(self, path = [0]):
         next_paths = self._next_path(path)
 
