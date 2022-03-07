@@ -1,0 +1,28 @@
+.settings {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    .change-shape-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        input[type="text"] {
+            width: 97%;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+        }
+        input:last-child {
+            margin-top: 10px;
+        }
+    }
+
+    .loading {
+        text-align: center;
+        padding: 10px;
+    }
+}

@@ -4,8 +4,8 @@ let grid = [
     [1, 1, 1]
 ]
 
-const canvas_max_width = 500 
-const canvas_max_height = 500
+const canvas_max_width = 300 
+const canvas_max_height = 300
 
 const grid_rows_input = document.querySelector("#grid-rows")
 const grid_columns_input = document.querySelector("#grid-columns")
@@ -60,7 +60,7 @@ async function fetch_hamlin_path(grid) {
 
 async function find_hamlin_path() {
     const loading = document.querySelector(".loading")
-    loading.innerHTML = "Loading...";
+    loading.innerHTML = "Calculating...";
     all_paths = await fetch_hamlin_path(grid)
     loading.innerHTML = "";
     current_bot_path = all_paths["max_hamlin_path"]

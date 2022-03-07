@@ -12,18 +12,21 @@
     <div class="container">
         <div class="canvas">
         </div>
+        <div class="notice">
+            Click on the blank boxes to create<br /> <b>black boxes</b> in the arena.
+        </div>
     </div>
     <div class="settings">
-        <button onclick="find_hamlin_path()">Find Hamlin Path</button>
+        <button onclick="find_hamlin_path()">Calculate Hamiltonian Path</button>
         <div class="shape">
-            <form id="change-shape-form">
+            <form id="change-shape-form" class="change-shape-form">
                 <input type="text" id="grid-rows"> 
                 x 
                 <input type="text" id="grid-columns"> 
-                <input type="submit" value="Change Shape">
+                <input type="submit" class=".change-shape-form-submit" value="Change Arena Shape">
             </form>
-            <div class="loading"></div>
         </div>
+        <div class="loading"></div>
     </div>
 
     <script src="{{ url_for('static', filename='scripts/canvas.js') }}"></script>

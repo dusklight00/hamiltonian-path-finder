@@ -1,19 +1,25 @@
 body {
     display: flex;
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
     height: 100vh;
+    flex-direction: column;
+    width: 300px;
 
     .container {
-        border: solid thin #000;
         flex: 1;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        .notice {
+            text-align: center;
+            margin-top: 30px;
+        }
     }
 
     .settings {
-        border: solid thin #000;
         flex: 0.4;
     }
 }
